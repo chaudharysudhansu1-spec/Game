@@ -73,6 +73,7 @@ Assets/
   GameIntroScreen.cs
   GameOverController.cs
   PlayerCollision.cs
+  PlayerWinController.cs
 Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs
 
 [metadataReferences]
