@@ -11,5 +11,11 @@ public class GameOverController : MonoBehaviour
             // Reload the current scene to restart the game
             SceneManager.LoadScene("GameScene");
         }
+        // Optionally, you can also check for the "Enter" key on the numeric keypad
+        if(Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            // Reload the current scene to restart the game
+            SceneManager.LoadScene("GameScene");
+        }
     }
 }
