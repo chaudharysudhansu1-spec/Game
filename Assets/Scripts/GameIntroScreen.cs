@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class GameIntroScreen : MonoBehaviour
 {
-    [SerializeField] private Canvas introCanvas; // The canvas with the intro UI
-    [SerializeField] private Button enterButton; // The "Enter" button
+    [SerializeField] private Canvas introCanvas; 
+    [SerializeField] private Button enterButton; 
     
     private bool gameStarted = false;
 
@@ -50,7 +50,6 @@ public class GameIntroScreen : MonoBehaviour
             introCanvas.gameObject.SetActive(false);
         }
 
-        Debug.Log("Game started!");
     }
 }
 
