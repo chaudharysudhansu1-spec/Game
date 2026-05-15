@@ -3,9 +3,9 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     [SerializeField] private float rayDistance = 10f;
-    [SerializeField] private Car carScript; // Reference to the Car script to access its speed
+    [SerializeField] private Car carScript; 
     
-    public static bool isInSafeZone = false; // Static property to track if player is in SafeZone
+    public static bool isInSafeZone = false; 
     
     void Update()
     {
