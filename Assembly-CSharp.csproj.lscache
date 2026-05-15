@@ -74,6 +74,7 @@ Assets/
   GameOverController.cs
   PlayerCollision.cs
   PlayerWinController.cs
+  SceneChanger.cs
 Temp/obj/Assembly-CSharp/.NETStandard,Version=v2.1.AssemblyAttributes.cs
 
 [metadataReferences]
