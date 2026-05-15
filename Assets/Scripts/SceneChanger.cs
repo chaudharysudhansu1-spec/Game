@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    [SerializeField] private string nextSceneName; // The name of the scene to load
+    [SerializeField] private string nextSceneName; 
 
     // Update is called once per frame
     void Update()
