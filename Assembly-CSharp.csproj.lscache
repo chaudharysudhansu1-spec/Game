@@ -68,7 +68,6 @@ Assets/
  Pre Assets/Starter Assets/TutorialInfo/Scripts/Readme.cs
  Scripts/
   Car.cs
-  CarSafeZoneDetector.cs
   CarSpawner.cs
   GameIntroScreen.cs
   GameOverController.cs
