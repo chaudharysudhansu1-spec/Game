@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 public class Car : MonoBehaviour
 {
     public float speed = 10f;
-    public float destroyTime = 10f; // Destroys the car after 10 seconds to save memory
-    [SerializeField] private string sceneToLoad = "GameOver"; // Scene to load on collision
-    [SerializeField] private float carDetectionDistance = 3f; // Distance to detect cars ahead
+    public float destroyTime = 10f; 
+    [SerializeField] private string sceneToLoad = "GameOver"; 
+    [SerializeField] private float carDetectionDistance = 3f; 
     
     private bool isStoppedByCarAhead = false;
     private bool isStoppedBySafeZone = false;
@@ -14,7 +14,7 @@ public class Car : MonoBehaviour
 
     void Start()
     {
-        // Automatically destroy the car after a few seconds so they don't pile up off-screen
+        
         Destroy(gameObject, destroyTime);
     }
 
@@ -27,7 +27,7 @@ public class Car : MonoBehaviour
 
     void DetectCarAhead()
     {
-        // Raycast forward to detect other cars ahead
+        
         RaycastHit hit;
         Vector3 rayDirection = transform.forward;
 
@@ -88,13 +88,10 @@ public class Car : MonoBehaviour
         if(PlayerCollision.isInSafeZone){
             if (isStoppedByCarAhead || isStoppedBySafeZone)
                 {
-                    // Don't move
+                    
                     return;
                 }
-        }        // Stop if there's a car ahead, SafeZone ahead, or player is in SafeZone
-        
-
-        // Move the car forward continuously
+        }        
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }
