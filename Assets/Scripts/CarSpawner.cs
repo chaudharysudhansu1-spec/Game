@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class CarSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject[] carPrefabs; // Array of car prefabs to spawn randomly
-    [SerializeField] private float spawnDelay = 2f; // Delay between spawns
+    [SerializeField] private GameObject[] carPrefabs; 
+    [SerializeField] private float spawnDelay = 2f; 
     [SerializeField] private float spawnInterval = 3f; // How often to spawn cars
     
     private float _spawnTimer;
