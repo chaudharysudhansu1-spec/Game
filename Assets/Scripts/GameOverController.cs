@@ -1,16 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOverController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    
+    private void Update()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            // Reload the current scene to restart the game
+            SceneManager.LoadScene("GameScene");
+        }
     }
 }
